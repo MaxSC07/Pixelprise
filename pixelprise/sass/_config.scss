@@ -1,0 +1,37 @@
+$secondary-color: #1A3674;
+$primary-color: #D1E3DD;
+$accent-color: #9D00FF;
+$nunito: 'Nunito', 'Inter';
+$inter: 'Inter', 'Nunito';
+
+@function weight($boldness) {
+    @if($boldness == "ExtraLight"){
+        @return 200;
+    }
+    @if($boldness == "Light"){
+        @return 300;
+    }
+    @if($boldness == "Regular"){
+        @return 400;
+    }
+    @if($boldness == "Medium"){
+        @return 500;
+    }
+    @if($boldness == "SemiBold"){
+        @return 600;
+    }
+    @if($boldness == "Bold"){
+        @return 700;
+    }
+    @if($boldness == "ExtraBold"){
+        @return 800;
+    }
+    @if($boldness == "Black"){
+        @return 900;
+    }
+}
+
+@mixin hover {
+    transform: scale(1.25);
+    transition: all .5s;
+}

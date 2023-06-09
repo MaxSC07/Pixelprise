@@ -1,0 +1,76 @@
+@import 'config';
+@import 'welcome';
+@import 'register';
+@import 'about';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+}
+
+body{
+    background-color: $primary-color;
+    overflow-x: hidden;
+    width: 100vw
+}
+
+
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu__i {
+    position: absolute;
+    right: 1rem;
+    color: $secondary-color;
+    cursor: pointer;
+}
+
+.return-arrow {
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+    color: $primary-color;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    background-color: $secondary-color;
+    width: 10rem;
+    right: 0;
+    opacity: .99;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-bottom-left-radius: 10px;
+    transform: translateX(100%);
+    transition: all .5s;
+}
+
+.menu__a {
+    color: $primary-color;
+    text-decoration: none;
+    font-family: $inter;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.menu--open {
+    transform: translateX(0%);
+    transition: all .5s;
+}
+
+.menu--active {
+    background-color: $accent-color;
+}

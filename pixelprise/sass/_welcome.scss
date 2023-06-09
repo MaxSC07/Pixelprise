@@ -1,0 +1,63 @@
+.welcome{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+}
+
+.welcome-footer {
+    height: 7vh;
+    background-color: $secondary-color;
+
+}
+
+.welcome-header{
+    height: 8vh;
+    background-color: $primary-color;
+
+}
+
+.welcome-main {
+    min-height: 85vh;
+}
+.welcome__h1 {
+    font-family: $nunito;
+    color: $secondary-color;
+    font-weight: weight('SemiBold');
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.welcome__h2 {
+    font-family: $inter;
+    color: $secondary-color;
+    font-weight: weight('Medium');
+    margin-bottom: 5rem;
+}
+
+.welcome__div {
+    background-color: $accent-color;
+    padding: 20px;
+    display: inline;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.welcome__div:hover {
+    @include hover;
+}
+
+.welcome__div::after {
+    content: "Get Started";
+    font-weight: weight('ExtraBold');
+    font-family: $nunito;
+    color: $primary-color
+}
+
+

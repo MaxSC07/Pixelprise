@@ -1,0 +1,109 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+body {
+    background-color: #D1E3DD;
+    padding: 0px;
+    margin: 0px;
+}
+
+a.visited {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    height: 15vh;
+}
+
+.navbar__div--left {
+    width: 55%;
+ 
+}
+
+.navbar__div--right {
+    width: 45%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login, .signup {
+    background-color: #1A3674;
+    width: 130px;
+    height: 50px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__div__a {
+    color: #4D007D;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.login__p, .signup__p {
+    color: #D1E3DD;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.login__p::before {
+    content: 'Log In';
+}
+
+.signup__p::before {
+    content: 'Sign Up';
+}
+
+.welcome {
+    height: 77vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome__h1 {
+    padding-top: 80px;
+    margin-bottom: 20px;
+    color: #1A3674;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.welcome__h2{
+    color: #1A3674;
+    font-weight: 500;
+}
+
+.welcome__div {
+    background-color: #9D00FF;
+    font-family: 'Nunito','Inter';
+    color: #F5FCFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.footer__div {
+    height: 8vh;
+    background-color: #1A3674;
+}
